@@ -4,11 +4,9 @@ The Sports Facility Booking Platform allows users to book sports facilities with
 
 ---
 
-### [Live Server](https://sports-facility-booking-platform-eight.vercel.app/)
+## [Live Server](https://sports-facility-booking-platform-eight.vercel.app/)
 
-```
-
-console
+```console
 https://sports-facility-booking-platform-eight.vercel.app/
 
 ```
@@ -51,21 +49,21 @@ https://sports-facility-booking-platform-eight.vercel.app/
 - **Security:**
   WT based authentication is implemented to protect routes and ensure that only authorized users and admins can access their respective routes.
 
-## How to setup in local computer:
+## How to setup in local computer
 
-### Clone the Repository:
+### Clone the Repository
 
 ```plain
 git clone https://github.com/GitHub-Sanjit/sports-facility-booking-platform.git
 ```
 
-### Install Dependencies:
+### Install Dependencies
 
 ```markdown
 npm install
 ```
 
-### Environment Variables:
+### Environment Variables
 
 - Create a `.env` file in the root directory.
 - Add the following environment variables:
@@ -80,13 +78,13 @@ JWT_ACCESS_EXPIRES_IN=1d
 JWT_REFRESH_EXPIRES_IN=365d
 ```
 
-### Run the Application:
+### Run the Application
 
 ```markdown
 npm run start:dev
 ```
 
-## How to use the application:
+## How to use the application
 
 ### 1. User Registration
 
@@ -139,7 +137,8 @@ Authorization: Bearer YOUR_JWT_TOKEN
 ### 4. Update a Facility (Admin Only)
 
 - Endpoint: `PUT /api/facility/:id`
-- Headers:
+- Headers
+
 ```markdown
 Authorization: Bearer YOUR_JWT_TOKEN
 ```
