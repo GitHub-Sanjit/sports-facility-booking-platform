@@ -22,7 +22,7 @@ https://sports-booking-platform.vercel.app
 - JWT
 - Zod
 
-## Features:
+## Features
 
 - **User Authentication and Authorization:**
   Users can sign up and log in using their email and password. Admins have additional powers for managing facilities and bookings.
@@ -56,7 +56,7 @@ https://sports-booking-platform.vercel.app
 ### Clone the Repository:
 
 ```plain
-git clone https://github.com/Rahad-Ullah/Sports-Facility-Booking-server.git
+git clone https://github.com/GitHub-Sanjit/sports-facility-booking-platform.git
 ```
 
 ### Install Dependencies:
