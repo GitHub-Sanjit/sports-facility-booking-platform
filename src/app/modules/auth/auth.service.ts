@@ -1,10 +1,10 @@
 import httpStatus from 'http-status'
-import AppError from '../../errors/AppError'
+import bcrypt from 'bcrypt'
+import config from '../../config'
 import { TUser } from '../user/user.interface'
 import { User } from '../user/user.model'
-import bcrypt from 'bcrypt'
+import AppError from '../../error/AppError'
 import { createToken } from './auth.utils'
-import config from '../../config'
 
 // sign-up
 const signUpUserIntoDB = async (payload: TUser) => {

@@ -1,14 +1,10 @@
 import { JwtPayload } from 'jsonwebtoken'
 import { TBooking } from './booking.interface'
 import { Booking } from './booking.model'
-import { Facility } from '../facility/facility.model'
-import AppError from '../../errors/AppError'
 import httpStatus from 'http-status'
-import {
-  calculatePayableAmout,
-  isEndTimeBeforeStartTime,
-  isTimeSlotAvailable,
-} from './booking.utils'
+import { Facility } from '../facility/facility.model'
+import AppError from '../../error/AppError'
+import { calculatePayableAmout, isEndTimeBeforeStartTime, isTimeSlotAvailable } from './booking.utils'
 
 // create new bookin into DB
 const createBookingIntoDB = async (user: JwtPayload, payload: TBooking) => {

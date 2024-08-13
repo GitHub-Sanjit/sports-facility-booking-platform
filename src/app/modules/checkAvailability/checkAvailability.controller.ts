@@ -1,9 +1,9 @@
 import httpStatus from 'http-status'
-import sendResponse from '../../utils/sendResponse'
 import { Request, RequestHandler, Response } from 'express'
-import catchAsync from '../../utils/catchAsync'
 import { getTodaysDate } from './checkAvailability.utils'
 import { CheckAvailabilityServices } from './checkAvailability.service'
+import catchAsync from '../../utils/catchAsync'
+import sendResponse from '../../utils/sendResponse'
 
 // check Time slots availability
 const checkAvailability: RequestHandler = catchAsync(
